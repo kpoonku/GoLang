@@ -21,10 +21,3 @@ func main() {
 		fmt.Println(r)
 	}
 }
-
-func isPositiveNumber(inn int) (bool, error) {
-	if inn < 0 {
-		return false, customErr{"negative number"}
-	}
-	return true, nil
-}

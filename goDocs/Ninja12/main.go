@@ -1,17 +1,20 @@
 package main
-import {
-	"/github.com/kpoonku/GoLang/tree/master/goDocs/Ninja12/Dog"
-}
+
+import (
+	"fmt"
+
+	"ninja12.godocs/dog"
+)
 
 type DoberMan struct {
 	name string
-	age int
+	age  int
 }
 
 func main() {
 	fido := DoberMan{
-		name:"Fido",
-		age : Dog.Years(10)
+		name: "Fido",
+		age:  dog.Years(10),
 	}
 	fmt.Println(fido)
 }
