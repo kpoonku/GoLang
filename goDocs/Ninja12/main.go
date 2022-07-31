@@ -1,6 +1,7 @@
 package main
 
 import (
+	"FirstCode/goDocs/Ninja12/dog"
 	"fmt"
 )
 
@@ -12,7 +13,7 @@ type DoberMan struct {
 func main() {
 	fido := DoberMan{
 		name: "Fido",
-		age:  10,
+		age:  dog.Years(10),
 	}
 	fmt.Println(fido)
 }
