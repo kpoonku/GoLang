@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"log"
 )
@@ -20,4 +21,11 @@ func main() {
 	} else {
 		fmt.Println(r)
 	}
+}
+
+func isPositiveNumber(i int) (int, error) {
+	if i < 0 {
+		return 0, errors.New("negative number")
+	}
+	return i, nil
 }
